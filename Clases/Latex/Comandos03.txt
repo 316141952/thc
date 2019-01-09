@@ -1,0 +1,56 @@
+    1  TallerDeHerramientasComputacionales]$ ls
+    2  LS
+    3  ls
+    4  mkdir thc
+    5  ipconfig
+    6  ifconfig
+    7  git config --global user.name
+    8  git config --global user.name "316141952"
+    9  git config --global user.email "vocado137@gmail.com"
+   10  git clone https://github.com/316141952/thc.git
+   11  git status
+   12  ls
+   13  cd thc/
+   14  ls
+   15  git status
+   16  git add *
+   17  git commit
+   18  git push
+   19  git pull
+   20  cd thc/
+   21  cd thc
+   22  cd thc/
+   23  mkdir -p Clases/Latex
+   24  ls
+   25  ls Clases/
+   26  ls/Clases/Latex
+   27  ls Clases/Latex
+   28  ls -la > Salida
+   29  less Salida
+   30  vi Salida
+   31  cd /tmp/
+   32  ls - la
+   33  ls -la
+   34  cd thc
+   35  cd thc/
+   36  cd
+   37  ls
+   38  cd thc/
+   39  ls
+   40  ls Clases/
+   41  ls/Clases/Latex
+   42   ls Clases/Latex
+   43  cd Clases/
+   44  mkdir Programas
+   45  cd
+   46  cd thc/
+   47  ls Clases/
+   48  vi Clases/Latex/03.txt
+   49  git add*
+   50  git add *
+   51  ls Clases/Latex/
+   52  git status
+   53  git commit
+   54  git commit -m "se creo el archivo 03.txt en el directorio Latex dentro de Clases"
+   55  git push
+   56   history > Clases/Latex/Comandos03.txt
