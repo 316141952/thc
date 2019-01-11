@@ -5,7 +5,7 @@ r = 189876545.7654675432
 # Print out numbers with quotes "" such that we see the
 # width of the field
 print '"%d"' % i       # minimum field
-#l a parte entera del número
+# la parte entera del número
 print '"%5d"' % i      # field of width 5 characters
 # usar espacio para 5 cifras 
 print '"%05d"' % i     # pad with zeros
