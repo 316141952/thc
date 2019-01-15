@@ -21,6 +21,7 @@ def raiz1 (x) :
         h = ( b+h )/2
         b = x/h
         print (h)
+        print (b)
     return (b)    
 
 print raiz (1)
