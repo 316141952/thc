@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Clase05.tex
-(./Clase05.tex
+**Clase06.tex
+(./Clase06.tex
 LaTeX2e <2017-04-15>
 Babel <3.9r> and hyphenation patterns for 6 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -455,8 +455,8 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (./Clase05.aux)
-\openout1 = `Clase05.aux'.
+)) (./Clase06.aux)
+\openout1 = `Clase06.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -535,28 +535,23 @@ e
 ))
 [1
 
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (3.52942pt too wide) in paragraph at lines 31--32
-[]$\OT1/cmr/m/n/12 %$s : el valor de la vari-able es una ca-dena, no un valor n
-um^^Serico. 
- []
-
-[2] [3] (./Clase05.aux) ) 
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2]
+(./Clase06.aux) ) 
 Here is how much of TeX's memory you used:
- 3148 strings out of 494879
- 40555 string characters out of 6178980
- 108525 words of memory out of 5000000
- 6422 multiletter control sequences out of 15000+600000
- 9012 words of font info for 33 fonts, out of 8000000 for 9000
+ 3128 strings out of 494879
+ 40341 string characters out of 6178980
+ 105525 words of memory out of 5000000
+ 6409 multiletter control sequences out of 15000+600000
+ 5900 words of font info for 22 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 37i,6n,35p,238b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb>
-Output written on Clase05.pdf (3 pages, 30581 bytes).
+ 37i,6n,35p,238b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
+fb>
+Output written on Clase06.pdf (2 pages, 28303 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
- 14 compressed objects within 1 object stream
+ 19 PDF objects out of 1000 (max. 8388607)
+ 12 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
