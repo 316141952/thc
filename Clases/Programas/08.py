@@ -3,7 +3,9 @@
 '''
 Valeria Ortiz Cervantes, 316141952
 Taller de Herramientas Computacionales
-Este programa fue para aprender cómo ejecutar un programa de python en bash.
+Aquí vimos distintas fomas de ponerle valor a una variable.
+Vimos cómo importar algo y renombrarlo.
+Y vimos la función input.
 ''' 
 x = 10.5; y = 1.0/3; z = 15.3
 #x,y,z = 10.5, 1.0/3, 15.3
