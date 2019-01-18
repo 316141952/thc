@@ -7,13 +7,6 @@ Aquí probé algunos ejemplos para comprobar la función,
 y después puse una parte interactiva para el bash.
 '''
 import Problema3 as p
-p.CaF (30)
-p.FaC (86)
-p.CaF (20)
-p.FaC (68)
-p.CaF (-3)
-p.FaC (26.6)
-
 from Problema3 import CaF
 from Problema3 import FaC
 

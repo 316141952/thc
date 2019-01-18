@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{enumitem} 
+\usepackage[utf8]{inputenc}
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Valeria Ortiz Cervantes}
+\date{17 de enero del 2019}
+
+\begin{document}
+	\maketitle
+	\newpage
+	\title{Clase IX. Bitácora\\}
+	\text{Los temas vistos en clase fueron:}
+	\begin{enumerate}
+		\item Cosas vistas en Latex:
+		\begin{enumerate}
+			\item Tablas:
+			\begin{enumerate}
+				\item Se empieza poniendo begin$\{$array$\}$ y end$\{$array$\}$
+				\item Pones una variable cualquiera entre llaves y $\|$ para especificar el número de columnas.
+				\item Utilizas hline para las líneas horizontales y $\&$ para las verticales.
+			\end{enumerate}
+			\item Alineamiento: pones begin$\{$align*$\}$ y end$\{$align*$\}$ y escribes lo que quieras poner alineado. 
+			\item Cómo hacer un libro:
+			\begin{enumerate}
+				\item Índice : pones tableofcontents para el índice, el título de los capítulos va con chapter y los subtítulos con section.
+				\item Insertar un link: 
+				\begin{enumerate}
+					\item Con url y el link entre llaves.
+					\item Con hyperref, la plataforma del link entre corchetes y el link entre llaves.
+				\end{enumerate}
+				\item Hacer los capítulos con subtítulos: los pones igual que en el índice pero más abajo.
+				\item Insertar un código de python sin modificarlo: 
+				\begin{enumerate}
+					\item Con begin $\{$verbatim$\}$ y end$\{$verbatim$\}$.
+					\item Con input y la dirección del archivo, si están en la misma carpeta solo con el nombre del archivo.
+				\end{enumerate}
+				\item Bibliografía: con el paquete biblatex y begin$\{$thebibliography$\}$, end$\{$thebibliography$\}$; al lado del begin va un número entre corchetes indicando el número de referencias.
+			\end{enumerate}
+		\end{enumerate}
+	\item Cosas vistas en Python:
+	\begin{enumerate}
+		\item Resolvimos el primer problema entre todos con una sucesión recursiva.
+		\item getwd : tiene la misma función que el comando pwd en la terminal.
+		\item listir :tiene la misma función que el comando ls en la terminal.
+		\item chdir : tiene la misma función que el comando cd en la terminal.
+	\end{enumerate}
+	\end{enumerate}
+\end{document}
