@@ -3,24 +3,28 @@
 # de cualquier triángulo 
 
 t == 'Equilátero' or t == 'Isósceles' or t == 'Escaleno'
-def perimetro (t,x,y,z) :
-    while t == 'Equilátero':
-        P = 3*x
+def perimetro (t,a,b,c) :
+    if t == 'Equilátero':
+        P = 3*a
         return P
-    while t == 'Isósceles' or t == 'Escaleno' :
-        P = x+y+z
+    if t == 'Isósceles' or t == 'Escaleno' :
+        P = a+b+c
         return P
 
 import math
 from math import sqrt as rc
-def altura (t,x,y,z) :
-    while t == 'Equilátero':
-        h = (rc(3)/2.00)*x
+def altura (t,a,b,c) :
+    if t == 'Equilátero':
+        h = (rc(3)/2.00)*a
         return h
-    
-
-def area (x) :
-    A = (rc(3)/4.00)*x**2
+    if t == 'Isósceles' or t == 'Escaleno' :
+        s = (a+b+c)/2
+        h = (2/a)*rc(s*(s-a)*(s-b)*(s-c))
+        return h
+        
+def area (t,a,b,c) :
+    if t == 'Isósceles' or t == 'Escaleno' :
+    A = (a*((2/a)*rc(s*(s-a)*(s-b)*(s-c)))/2
     return A
 
 
