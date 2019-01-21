@@ -6,6 +6,7 @@ Taller de Herramientas Computacionales
 Aquí probé algunos ejemplos para comprobar la función,
 y después puse una parte interactiva para el bash.
 '''
+
 import Problema4 as p
 from Problema4 import Fib
 n=input("¿Qué término de la sucesión de Fibonacci quieres calcular?")

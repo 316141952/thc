@@ -1,4 +1,5 @@
 def suma (n) :
-    while n > 0 :
-        x = n + 1
-        return x
+    x = 1 + 2 + 3 + ... + (n-1)
+    while x <= n :
+        m = x + n
+        return m

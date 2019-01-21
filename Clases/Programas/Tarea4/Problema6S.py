@@ -8,7 +8,7 @@ y después puse una parte interactiva para el bash.
 '''
 
 from Problema6 import prom_10 as P
-x1,x2,x3,x4,x5,x6,x7,x8,x9,x10 =input("¿De cuáles 10 datos quieres obtener el promedio?")
+x1,x2,x3,x4,x5,x6,x7,x8,x9,x10 = input("¿De cuáles 10 datos quieres obtener el promedio?")
 print "El promedio es %f" % (P(x1,x2,x3,x4,x5,x6,x7,x8,x9,x10))
 
 from Problema6 import prom_10 as p
