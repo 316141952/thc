@@ -18,19 +18,36 @@
 		\begin{enumerate}
 			\item Tablas:
 			\begin{enumerate}
-				\item Se empieza poniendo begin$\{$array$\}$, end$\{$array$\}$.
-				\item Seguido de otras llaves con una variable cualquiera separada por el caracter $\|$, que es lo que define el número de columnas.
-				\item Se utiliza el caracter $\&$ para escribir en otra columna. 
-				\item Se utiliza el comando hline para pasar a otra fila.
+				\item Se empieza poniendo begin$\{$array$\}$ y end$\{$array$\}$
+				\item Pones una variable cualquiera entre llaves y $\|$ para especificar el número de columnas.
+				\item Utilizas hline para las líneas horizontales y $\&$ para las verticales.
 			\end{enumerate}
-			\item Alineamiento: Con begin$\{$align$\}$ y end $\{$align$\}$.
+			\item Alineamiento: pones begin$\{$align*$\}$ y end$\{$align*$\}$ y escribes lo que quieras poner alineado. 
+			\item Cómo hacer un libro:
+			\begin{enumerate}
+				\item Índice : pones tableofcontents para el índice, el título de los capítulos va con chapter y los subtítulos con section.
+				\item Insertar un link: 
+				\begin{enumerate}
+					\item Con url y el link entre llaves.
+					\item Con hyperref, la plataforma del link entre corchetes y el link entre llaves.
+				\end{enumerate}
+				\item Hacer los capítulos con subtítulos: los pones igual que en el índice pero más abajo.
+				\item Insertar un código de python sin modificarlo: 
+				\begin{enumerate}
+					\item Con begin $\{$verbatim$\}$ y end$\{$verbatim$\}$.
+					\item Con input y la dirección del archivo, si están en la misma carpeta solo con el nombre del archivo.
+				\end{enumerate}
+				\item Bibliografía: con el paquete biblatex y begin$\{$thebibliography$\}$, end$\{$thebibliography$\}$; al lado del begin va un número entre corchetes indicando el número de referencias.
+			\end{enumerate}
 		\end{enumerate}
 		\item Cosas vistas en Python:
 		\begin{enumerate}
-			\item Resolvimos el Problema 1 de la Tarea 4 en clase, con una sucesión recursiva.
-			\item getwd : cumple la misma función que el comando pwd en la terminal. 
-			\item listir : cumple la misma función que ls en la terminal. 
-			\item chdir : cumple la misma función que el comando cd en la terminal. 
+			\item Resolvimos el primer problema entre todos con una sucesión recursiva.
+			\item getwd : tiene la misma función que el comando pwd en la terminal.
+			\item listir :tiene la misma función que el comando ls en la terminal.
+			\item chdir : tiene la misma función que el comando cd en la terminal.
 		\end{enumerate}
+	\end{enumerate}
+\end{document}
 	\end{enumerate}
 \end{document}
