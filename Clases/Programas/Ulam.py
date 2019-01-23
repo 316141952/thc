@@ -1,4 +1,4 @@
-def ulam (x) :
+ def ulam (x) :
     #if (x/2)*2-x == 0 :
     if x%2 == 0 :
         return x/2
