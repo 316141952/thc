@@ -1,0 +1,33 @@
+\documentclass{article} %El formato de documento que utilizo es de artículo.
+\usepackage{amsmath} %Este paquete mejora la información estructural y la visualización de documentos que contengan fórmulas matemáticas.
+\usepackage{amssymb} %Este paquete provee una colección extendida de símbolos matemáticos.
+\usepackage{graphicx} %Este paquete es para poder insertar imágenes
+\usepackage[utf8]{inputenc} %Este paquete es para los carácteres especiales en español, como los acentos.
+\graphicspath{{/home/Valeria/thc/Clases/Latex/Imagenes}}
+\usepackage{courier}
+\renewcommand*\familydefault{\ttdefault}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{\huge Valeria Ortiz Cervantes}
+\date{\LARGE 21 de enero del 2019}
+
+
+\begin{document}
+\maketitle
+\begin{center}
+	\subsection*{\LARGE Universidad Nacional Autónoma de México.\\Facultad de Ciencias.\\}
+	\includegraphics[scale=3]{/1.jpg}
+\end{center}
+\newpage
+\title{\LARGE Cuestionario de la bitácora XI.}
+\begin{enumerate}
+	\item ¿Cómo puedes recorrer cada elemento en una lista?\\Con: for i in "nombre de la lista".
+	\item ¿Cómo puedes recorrer los elementos de la lista yendo por los índices?\\Con: for i in range (len ("nombre de la lista") ).
+	\item ¿Cómo puedes sumarle un número a todos los elementos de la lista a la vez?
+	\begin{enumerate}
+		\item Con: for x in range (len ("nombre de la lista" ):\\"nombre de la lista"[x] += c
+		\item Con: for x,y in enumerate ("nombre de la lista") :\\"nombre de la lista"[x] = y + c
+	\end{enumerate}
+	\item ¿Qué hace la función zip?\\Crea duplas con elementos de listas, siempre y cuando las listas tengan la misma longitud.
+\end{enumerate}
+\end{document}

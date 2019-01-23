@@ -1,0 +1,54 @@
+ \documentclass{article} %El formato de documento que utilizo es de artículo.
+\usepackage{amsmath} %Este paquete mejora la información estructural y la visualización de documentos que contengan fórmulas matemáticas.
+\usepackage{amssymb} %Este paquete provee una colección extendida de símbolos matemáticos.
+\usepackage{graphicx} %Este paquete es para poder insertar imágenes
+\usepackage[utf8]{inputenc} %Este paquete es para los carácteres especiales en español, como los acentos.
+\graphicspath{{/home/Valeria/thc/Clases/Latex/Imagenes}}
+\renewcommand*\ttdefault{cmvtt}
+\renewcommand*\familydefault{ttdefault}
+\usepackage[T1]{fontenc}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{\huge Valeria Ortiz Cervantes}
+\date{\LARGE 21 de enero del 2019}
+
+\begin{document}
+\maketitle
+\begin{center}
+	\subsection*{\LARGE Universidad Nacional Autónoma de México.\\Facultad de Ciencias.\\}
+	\includegraphics[scale=3]{/1.jpg}
+\end{center}
+\newpage
+\title{\LARGE Clase XII. Bitácora\\}
+\begin{enumerate}
+	\item Cosas vistas en Python :
+	\begin{enumerate}
+		\item Retomamos lo de la tabla de la clase anterior y vimos una función para acomodar una lista en forma de tabla y que sea más fácil leerla:  Importas el módulo pprint y con la función pprint("nombre de la lista").
+		\item Corchetes con dos puntos para mostrar ciertos elementos de una lista:
+		\begin{enumerate}
+			\item "nombre" [:] : mostrar todos los elementos de la lista.
+			\item "nombre" [x:] : mostrar los elementos de la lista a partir del índice x.
+			\item "nombre" [:x] : mostrar los elementos de la lista que están antes del índice x.
+			\item "nombre" [x:y] : mostrar los elementos de la lista a partir del índice x hasta antes del elemento con el índice y.
+			\item "nombre" [x:-1] : mostrar los elementos de la lista a partir del índice x hasta antes del último elemento.
+			\text{Si la lista contiene otras listas como elementos se puede dar lo siguiente:}
+			\item "nombre" [x,y][a,b] : mostrar los elementos de la primera lista a partir del índice x hasta antes del elemento con el índice y; y como ese elemento es una lista, mostrar los elementos de esa lista que van desde el índice a hasta uno antes del índice b.
+		\end{enumerate}
+		\item L.index (x) : te muestra el índice dentro de la lista L del elemento x.
+		\item L.sort () : ordena todos los elementos de la lista L de menos a mayor
+	\end{enumerate}
+	\item Cosas vistas en LateX:
+	\begin{enumerate}
+		\item Vimos cómo hacer una presentación:
+		\begin{enumerate}
+			\item Al inicio pones: 
+			\begin{verbatim}\documentclass{beamer} \end{verbatim}
+			\item Para cada diapositiva pones: \begin{verbatim} \begin{frame} y \end{frame}\end{verbatim}
+			\item Para los títulos es :
+			\begin{verbatim} \frametitle{"título"} \end{verbatim}
+			\item Cómo poner temas en la presentación:\\ Se usan paquetes con temas predeterminados, pero todos son de un tono azul horrible y solo uno era rojo, pones: \begin{verbatim} \usetheme{tema}
+			\end{verbatim}
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+\end{document}

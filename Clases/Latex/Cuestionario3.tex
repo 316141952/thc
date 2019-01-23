@@ -1,0 +1,35 @@
+\documentclass{article} %El formato de documento que utilizo es de artículo.
+\usepackage{amsmath} %Este paquete mejora la información estructural y la visualización de documentos que contengan fórmulas matemáticas.
+\usepackage{amssymb} %Este paquete provee una colección extendida de símbolos matemáticos.
+\usepackage{graphicx} %Este paquete es para poder insertar imágenes
+\usepackage[utf8]{inputenc} %Este paquete es para los carácteres especiales en español, como los acentos.
+\graphicspath{{/home/Valeria/thc/Clases/Latex/Imagenes}}
+
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{\huge Valeria Ortiz Cervantes}
+\date{\LARGE 21 de enero del 2019}
+
+
+\begin{document}
+\maketitle
+\begin{center}
+	\subsection*{\LARGE Universidad Nacional Autónoma de México.\\Facultad de Ciencias.\\}
+	\includegraphics[scale=3]{/1.jpg}
+\end{center}
+\newpage
+\title{\LARGE Cuestionario de la bitácora XII.}
+\begin{enumerate}
+	\item ¿Cómo se muestra un elemento de una litsta?\\Con el nombre de la lista, y pones el índice del elemento entre corchetes. 
+	\item ¿Cómo se muestran determinados elementos de una lista?\\Con los corchetes y delimitas con los índices de los elementos, el que será el elemento inicial, dos puntos, el que será el límite. 
+	\item ¿Cómo se muestran todos los elementos de una lista?\\Con los corchetes solo con dos puntos dentro. 
+	\item ¿Qué significa que en los corchetes esté un número negativo?\\Podemos ver los índices como si fueran cíclicos, así que al poner un número negativo vas en el sentido contrario, por ejemplo si pones -1 te estarías refiriendo al último elemento, si pones -2 sería al penúltimo elemento.
+	\item ¿Cómo puedes mostrar los elementos de una lista que esta dentro de otra lista?\\Usando dobles corchetes para referirte primero a la lista dentro de la primera lista y lso segundos corchetes para referirte a los elementos dentro de la segunda lista.
+	\item ¿Cómo puedes saber el índice de un elemento?\\Con "nombre de la lista".index [elemento].
+	\item ¿Cómo se puede ordenar una lista?\\ Con "nombre de la lista".sort (), todos los elementos de la lista se ordenarán de menor a mayor.
+	\item ¿Cómo se crea una presentación en LateX?\\Con\begin{verbatim}\documentclass{beamer}. \end{verbatim}
+	\item ¿Cómo se crea una diapositiva nueva en LateX?\\Con\begin{verbatim} \begin{frame} y \end{frame}\end{verbatim}
+	\item ¿Cómo se pone un tema en una presentación en LateX?\\Pones: \begin{verbatim} \usetheme{"nombre del tema"}
+	\end{verbatim}
+\end{enumerate}
+\end{document}
