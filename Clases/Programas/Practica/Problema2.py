@@ -1,4 +1,4 @@
-#def sum_c (x) :
+﻿#def sum_c (x) :
 #    if n == 1 :
 #        return 1
 #    else n > 1 :
@@ -22,6 +22,8 @@
 #            S.append(a)
 #            n = S.pop(len(S)-1)
 #    print n
+
+#Muchos intentos fallidos pero sí se pudo
 
 def sum_c (x) :
     if x == 1 :
