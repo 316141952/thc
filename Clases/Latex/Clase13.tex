@@ -1,0 +1,72 @@
+\documentclass{article} %El formato de documento que utilizo es de artículo.
+\usepackage{amsmath} %Este paquete mejora la información estructural y la visualización de documentos que contengan fórmulas matemáticas.
+\usepackage{amssymb} %Este paquete provee una colección extendida de símbolos matemáticos.
+\usepackage{graphicx} %Este paquete es para poder insertar imágenes
+\usepackage[utf8]{inputenc} %Este paquete es para los carácteres especiales en español, como los acentos.
+\graphicspath{{/home/Valeria/thc/Clases/Latex/Imagenes}}
+\renewcommand*\ttdefault{cmvtt}
+\renewcommand*\familydefault{ttdefault}
+\usepackage[T1]{fontenc}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{\huge Valeria Ortiz Cervantes}
+\date{\LARGE 23 de enero del 2019}
+
+\begin{document}
+\maketitle
+\begin{center}
+	\subsection*{\LARGE Universidad Nacional Autónoma de México.\\Facultad de Ciencias.\\}
+	\includegraphics[scale=3]{/1.jpg}
+\end{center}
+\newpage
+\title{\LARGE Clase XIII. Bitácora\\}
+\text{En la clase de hoy solo vimos cosas en Python, y estas fueron las cosas nuevas que vimos:}
+\begin{enumerate}
+	\item if a: : esto es equivalente a poner if bool(a):
+	\item , : una coma después de un print(), hace que se omitan los saltos de línea. 
+	\item Funciones recursivas: las funciones recursivas son funciones que se llaman a si mismas.\\ Estos son los ejemplos que realizamos en clase :
+	\begin{verbatim}
+	Ejemplo 1: esta es una función que calcula el enésimo término de la suceción 
+	de Fibonacci de manera recursiva.
+	def fib (n) :
+	    ''' Calcula el enésimo término de la
+	sucesión de Fibonacci con n natural '''
+	    if n > 2:
+	        return fib(n-1) + fib (n-2)
+	    else :
+	        return 1
+	
+	Ejemplo 2: esta es una función que calcula la suma de los primeros n números 
+	naturales de manera recursiva.
+	def suma (x) :
+	    if x == 1 :
+	        return 1
+	    else :
+	        return x + suma (x-1)
+	
+	Ejemplo 3: esta es una función recursiva que al introducir una lista como entrada 
+	te devuelve los valores de la lista pero sin estar en ella.
+	def recursiva (L) :
+	    n = len (L)
+	    if n > 1 :
+	        print L[0],
+	        recursiva (L[1:])
+	    else :
+	        print L[0]
+	
+	Ejemplo 4: esta función recursiva hace lo mismo que la anterior pero la modificamos 
+	para que sea más corta.
+	def printr (L) :
+	    if L:
+	        print L [0],
+	        printr (L [1:])
+	    else :
+	        None
+	\end{verbatim}
+	\item Tipos de variables:
+	\begin{enumerate}
+		\item Local: variable que se encuentra dentro de una función, al estar dentro de una función sólo es válida dentro de la misma. 
+		\item Global: variable que se encuentra fuera de una función, esta es válida tanto dentro como fuera de funciones. 
+	\end{enumerate}
+\end{enumerate}
+\end{document}
