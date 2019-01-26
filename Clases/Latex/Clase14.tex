@@ -1,0 +1,102 @@
+\documentclass{article} %El formato de documento que utilizo es de artículo.
+\usepackage{amsmath} %Este paquete mejora la información estructural y la visualización de documentos que contengan fórmulas matemáticas.
+\usepackage{amssymb} %Este paquete provee una colección extendida de símbolos matemáticos.
+\usepackage{graphicx} %Este paquete es para poder insertar imágenes
+\usepackage[utf8]{inputenc} %Este paquete es para los carácteres especiales en español, como los acentos.
+\graphicspath{{/home/Valeria/thc/Clases/Latex/Imagenes}}
+\renewcommand*\ttdefault{cmvtt}
+\renewcommand*\familydefault{ttdefault}
+\usepackage[T1]{fontenc}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{\huge Valeria Ortiz Cervantes}
+\date{\LARGE 24 de enero del 2019}
+
+\begin{document}
+\maketitle
+\begin{center}
+	\subsection*{\LARGE Universidad Nacional Autónoma de México.\\Facultad de Ciencias.\\}
+	\includegraphics[scale=3]{/1.jpg}
+\end{center}
+\newpage
+\title{\LARGE Clase XIV. Bitácora\\}
+\text{Solo vimos cositas en Python, unas funciones, que fueron las siguientes:}
+\begin{enumerate}
+	\item Programa Laberinto:\\Este fue un ejemplo para la función de los problemas de Python fácil del laberinto porque a nadie le quedó del todo claro el problema. Hicimos la función de apoco pensando en ejemplos muy sencillos y viendo cómo se resolverían estos, esto fue lo que hicimos:
+	\begin{verbatim}
+		Este fue el laberinto que usamos como ejemplo:
+		L = [[True,True,True,True],
+			[False,False,False,True],
+			[True,True,False,True]]
+			
+		Y esta es la función que nos daba la salida: 
+		def resolver (L,e) :
+		    n = len (L[0]) #columnas
+		    m = len (L) #filas
+		    x = e[0]
+		    y = e[1]
+	 	    if y == n-1 or x == m-1 :
+		        return e[0]+1, e[1]+1 #en este caso e es la salida
+		    else :
+		        if L[x][y+1] == False : #de aquí en adelante e es la posición en la que estás
+		            e = [x,y+1]
+		            return resolver (L,e)
+	            elif L[x+1][y] == False :
+		            e = [x+1,y] 
+		            return resolver (L,e)
+		        else:
+		            print 'Ya no puede avanzar'
+		
+		r = resolver (L, [1,0]) 
+		import numpy as np
+		print (np.matrix(L)) #muestra L acomodada como una matriz
+	\end{verbatim}
+	\item Programa ADN: En este hicimos varias funciones en las que como entrada insertabas una cadena de ADN y una base y la función te devolvía cuántas veces se repitió esa base dentro de la cadena; que en si todas hacían lo mismo pero fuimos mejorando poco a poco la función para que viéramos cómo podemos ir puliendo las funciones de manera que tengan menos instrucciones, menos líneas y por ende que sean más rápidas de ejecutar, estas fueron las funciones:
+	\begin{verbatim}
+		def contar_v1 (adn,base) :
+		    adn = list (adn)
+		    i = 0
+		    for c in adn :
+		        if c == base :
+		            i +=1
+		            return i
+		 
+		def contar_v2 (adn,base) :
+		    i = 0
+		    for c in adn :
+		        if c == base :
+		            i +=1
+		            return i
+		
+		def contar_v3 (adn,base) :
+		    i = 0
+		    j = 0
+		    while j < len (adn ):
+		        if adn[j] == base :
+		            i +=1
+		            j += 1
+		            return i
+		
+		def contar_v4 (adn,base) :
+		    i = 0
+		    for j in range(len(adn)) :
+		        if adn[j] == base :
+		            i +=1
+		            return i
+		
+		Este fue el ejemplo que utilizamos y en efecto todas las funciones nos regresaron lo mismo.
+		
+		adn = 'ATGCGACCTAT'
+		base = 'C'
+		print contar_v1 (adn,base)
+		n = contar_v2 (adn,base)
+		print n
+		print '%s aparece %d veces en %s' % (base,n,adn)
+		print '{base} aparece {n} veces en {adn}'.\
+		format(base = base, n = n, adn = adn)
+		print contar_v2 (adn,base) 
+		print contar_v3 (adn,base) 
+		print contar_v4 (adn,base) 
+	\end{verbatim}
+\end{enumerate}
+\end{document}

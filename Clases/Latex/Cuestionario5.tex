@@ -1,0 +1,29 @@
+\documentclass{article} %El formato de documento que utilizo es de artículo.
+\usepackage{amsmath} %Este paquete mejora la información estructural y la visualización de documentos que contengan fórmulas matemáticas.
+\usepackage{amssymb} %Este paquete provee una colección extendida de símbolos matemáticos.
+\usepackage{graphicx} %Este paquete es para poder insertar imágenes
+\usepackage[utf8]{inputenc} %Este paquete es para los carácteres especiales en español, como los acentos.
+\graphicspath{{/home/Valeria/thc/Clases/Latex/Imagenes}}
+
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{\huge Valeria Ortiz Cervantes}
+\date{\LARGE 24 de enero del 2019}
+
+
+\begin{document}
+\maketitle
+\begin{center}
+	\subsection*{\LARGE Universidad Nacional Autónoma de México.\\Facultad de Ciencias.\\}
+	\includegraphics[scale=3]{/1.jpg}
+\end{center}
+\newpage
+\title{\LARGE Cuestionario de la bitácora XIV.}
+\begin{enumerate}
+	\item ¿Cuál es la mejor manera de hacerle frente a un problema?\\Lo mejor es primero estar seguro de entender lo que se pide, utilizar ejemplos para ver el comportamiento del problema, básicamente tratar de pasar de lo particular a lo general, porque una vez que ya lo tienes claro y sabes exactamente qué debes hacer, es mucho más fácil pasarlo a código.
+	\item ¿Qué hace el comando elif?\\Básicamente es el comando if y else abreviados, se usa para evitar líneas y bloques de más.
+	\item ¿Por qué se omitió "adn = list (adn)" en la primera función del programa adn?\\Porque en realidad eso no afecta el comportamiento de la función, pues al poner "for c in adn :" ya se está dando por hecho que adn es una lista, así que la especificación de arriba resulta redundante.
+	\item ¿Por qué se pudo cambiar "while j < len (adn ):" por "for j in range(len(adn)) :" sin que el código marcara algún error?\\El while se refiere a que considere la j siempre y cuando sea menor que la longitud de la lista y al considerar después a j como índice no marca error pues el número de índices de una lista es la longitud menos uno; el for se refiere primero a considerar el largo de la lista, con eso creas una lista que contenga esos elementos, por lo tanto el número de índices de esa lista será el mismo que el de la lista adn y así no afecta al problema, es por eso que no marca error, al final ambos se refieren a lo mismo. 
+	\item ¿Por qué se pudo omitir la j = 0 sin problema?\\Porque como ya estamos definiendo j con el for, pues no es necesario, resulta redundante. 
+\end{enumerate}
+\end{document}
