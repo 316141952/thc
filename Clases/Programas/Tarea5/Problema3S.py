@@ -8,12 +8,11 @@ y después puse una parte interactiva para el bash.
 '''
 
 import Problema3
-from Problema3 import *
+from Problema3 import grados
 
-x = input ("¿Cuál es el extremo izquierdo del intervalo?")
-y = input ("¿Cuál es el extremo derecho del intervalo?")
+g = input ("Dame en una cadena qué grados que quieres convertir: ")
+x = input ("¿Cuál es el extremo izquierdo del intervalo? ")
+y = input ("¿Cuál es el extremo derecho del intervalo? ")
 n = input ("¿Cuántos subintervalos?")
-C = listaC (x,y,n)
-F = listaF (C)
-print C
-print F
+
+print grados (g,x,y,n)
